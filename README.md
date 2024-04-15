@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# Teste Ubicua Front-end
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Segunda parte do teste para a vaga de front-end da Ubicua.
 
-Currently, two official plugins are available:
+## Índice
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Sobre](#sobre)
+- [Começando](#começando)
+- [Instalação](#instalação)
+- [Uso](#uso)
 
-## Expanding the ESLint configuration
+## Sobre
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Esse sistema tem a função de utilizar a api criada também para o teste, em Asp.NET, para que seja possivel utilizar das funcionalidades de cadastro e listagem de usuários.
 
-- Configure the top-level `parserOptions` property like this:
+## Começando
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+O projeto utiliza do Redux para o gerenciamento de estados globais. 
+O projeto possue apenas uma tela e alguns modais por cima para as telas de edição e adição de novos usuarios.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Instalação
+
+Para fazer a instalação do sistema, basta clonar o repositório e executar o comando npm install.
+
+## Uso
+
+O codigo está concentrado, em sua maioria, no arquivo App.tsx, possue uma pasta de componentes junto do arquivo que cria todo o background da aplicação chamdo Modelo.tsx. Possue tambem uma pasta redux que é onde fica toda a parte de gerenciamento de estados. 
+
+A aplicação utiliza do Tailwind para a estilização em conjunto do Shadcn/ui para a criação dos componentes.
+
+
